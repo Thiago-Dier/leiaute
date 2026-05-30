@@ -76,3 +76,34 @@ footer {
 .menu li:hover {
     background-color: #ff4043;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.menu .submenu {
+    display: none;         
+    position: absolute;    
+    top: 100px;            
+    left: 0;
+    background-color: #19242f; 
+    min-width: 150px; 
+    list-style: none;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu .submenu li {
+    width: 100%;
+    float: none;
+}
+
+.menu .submenu li a {
+    line-height: 45px;
+    text-align: left;
+    padding: 0 15px;
+    display: block;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
